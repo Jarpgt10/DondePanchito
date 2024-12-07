@@ -1,0 +1,23 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Bienvenido from "../components/Welcome.astro";
+import Contacto from "../components/Contacto.astro";
+import Ubicacion from "../components/Ubicacion.astro";
+import Menu from "../components/Menu";
+---
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Restaurante</title>
+		<link rel="stylesheet" href="" />
+	</head>
+	<body>
+		<Navbar />
+		<Bienvenido />
+		<Menu client:load />
+		<Contacto />
+		<Ubicacion />
+	</body>
+</html>
